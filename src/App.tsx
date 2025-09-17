@@ -1,4 +1,4 @@
-import './App.module.css';
+import styles from './App.module.css';
 import './global.css';
 import { Header } from './components/Header'
 import { Prancheta } from './components/Prancheta';
@@ -10,7 +10,7 @@ function App() {
     <div>
       <Header/>
 
-      <main>
+      <main className={styles.mainPrancheta}>
         <Prancheta />
       </main>
     </div>
