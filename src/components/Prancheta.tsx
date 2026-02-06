@@ -65,12 +65,12 @@ export function Prancheta() {
                 <header className={styles.header}>
                     <div className={styles.align}>
                         <span className={styles.span1}>Tarefas criadas</span>
-                        <p>{tarefas.length}</p>
+                        <p className={styles.p1}>{tarefas.length}</p>
                     </div>
 
                     <div className={styles.align}>
                         <span className={styles.span2}>Concluídas</span>
-                        <p>{tarefas.length === 0 ? tarefas.length : `${tarefas.filter((t) => t.completa).length} de ${tarefas.length}`}</p> {/* A logica de mostrar quantas tarefas foram concluidas é a seguinte "se o tamanho da lista de tarefas for extritamente igual a 0 entao mostre o tamanho da quantidade das tarefas, senao filtre as tarefas que possuem a propriedade completa true e mostre a quantidade delas + de + a quantidade total de tarefas concluidas e nao concluidas"*/}
+                        <p className={styles.p2}>{tarefas.length === 0 ? tarefas.length : `${tarefas.filter((t) => t.completa).length} de ${tarefas.length}`}</p> {/* A logica de mostrar quantas tarefas foram concluidas é a seguinte "se o tamanho da lista de tarefas for extritamente igual a 0 entao mostre o tamanho da quantidade das tarefas, senao filtre as tarefas que possuem a propriedade completa true e mostre a quantidade delas + de + a quantidade total de tarefas concluidas e nao concluidas"*/}
                     </div>
                 </header>
                 

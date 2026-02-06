@@ -76,7 +76,6 @@ article {
 
     font-size: 12px;
     font-weight: bold;
-    border-radius: 100%;
     padding: 0.1rem 0.5rem;
 }
 
@@ -95,6 +94,14 @@ article {
 
 .span2 {
     color: var(--purple);
+}
+
+.p1 {
+    border-radius: 100%;
+}
+
+.p2 {
+    border-radius: 8px;
 }
 
 .fieldTask {

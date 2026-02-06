@@ -20,5 +20,5 @@ export function Task({content, completa, aoAlternar, aoDeletar}: TaskProps){ //R
         <span className={completa ? styles.completed : ""} /* se completa for true entao recebe a classe completed, senao nao recebe classe nenhuma*/>{content}</span>
         <button onClick={aoDeletar} /*ao clicar ativa a funcao de deletar*/><Trash size={18} /></button>
     </div>
-    )
+    ) 
 }
